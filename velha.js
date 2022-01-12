@@ -107,6 +107,8 @@ function mudarCorQuadrado(quadrado1, quadrado2, quadrado3){
 }
 
 
+
+//uso do boolean para realizar o teste logico para as sequencias de vitorias
 function checarSequencia(quadrado1, quadrado2, quadrado3){
 	var igual = false;
 
@@ -114,4 +116,21 @@ function checarSequencia(quadrado1, quadrado2, quadrado3){
 		igual = true;
 	}
 	return igual;
+}
+
+
+
+//habilitar o botão reiniciar
+function reiniciar(){
+
+vencedor = null;
+vencedorSelecionado.innerHTML = '-';
+
+	for(i = 1; i <= 9; i++) {
+		var quadrado = document.getElementById(i);
+		quadrado.style.background = 'yellow';
+		quadrado.style.color = 'yellow';
+		quadrado.innerHTML = '-';
+
+	}
 }
